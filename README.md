@@ -9,12 +9,18 @@ https://www.kaggle.com/datasets/camnugent/sandp500 여기서 all_stocks_5yr.csv�
 외부 모듈들은 bash에 pip install -r requirement.txt 을 써서 다운 받아주시길 바랍니다.
 
 ## Connect Database
-데이터 베이스의 정보들을 .env에 넣은 후 python-dotenv을 이용해 로드 해주시길 바랍니다.
+데이터 베이스의 정보들을 .env에 넣은 후 python-dotenv을 이용해 로드 해주시길 바랍니다. \
+ex) \
+DB_HOST = host\
+DB_PORT = port\
+DB_NAME = dbname\
+DB_USER = user\
+DB_PASSWORD = password\
 
 ## Information
 Language : Python \
 Database : Supabase(PostgreSQL) \
-Environment : Github Codespaces \
+Environment : Github Codespaces
 
 ## ETL pipeline design
 CSV -> Extract : pd.read_csv -> Transform : 컬럼 정규화, 타입 변환, 결측치 제거 -> Load : PostgreSQL bulk insert (execute_values) -> Supabase
