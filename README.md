@@ -32,7 +32,7 @@ Environment : Github Codespaces
 CSV -> Extract : pd.read_csv -> Transform : 컬럼 정규화, 타입 변환, 결측치 제거 -> Load : PostgreSQL bulk insert (execute_values) -> Supabase
 
 ## SQL
-SQL에 작성되어있는 코드들은 Supabase의 SQL Editor에서 입력해주시길 바랍니다.
+SQL에 작성되어있는 코드들은 Supabase의 SQL Editor에서 입력하거나 SQLTools 확장을 다운받아 사용해 주시길 바랍니다..
 
 ## Project structure
 stock_price_etl_pipeline \

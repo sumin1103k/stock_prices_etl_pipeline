@@ -2,3 +2,6 @@ data/
 *.csv
 
 .env
+
+.vscode/
+*.json
